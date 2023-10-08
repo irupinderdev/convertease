@@ -1,4 +1,5 @@
 // components/Navbar.js
+import Link from 'next/link';
 import { useState } from 'react';
 
 function Navbar() {
@@ -40,7 +41,7 @@ function Navbar() {
             </button>
           </div>
           <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} mt-4 lg:mt-0`}>
-            <a href="#" className="text-white hover:text-gray-300 mr-4">Home</a>
+            <a href={"/"} className="text-white hover:text-gray-300 mr-4">Home</a>
             <a href="#" className="text-white hover:text-gray-300 mr-4">About</a>
           </div>
         </div>
